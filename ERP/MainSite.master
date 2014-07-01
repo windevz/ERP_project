@@ -1,0 +1,11 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/MasterSite.Master" AutoEventWireup="false" CodeBehind="MainSite.master.vb" Inherits="ERP.MainSite" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="cphData" runat="server">
+    <div id="section" style="background-image: url(Images/background2.png);">
+        <asp:ContentPlaceHolder id="cphMainData" runat="server">
+
+
+
+
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>

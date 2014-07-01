@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{8735C136-6233-4516-AA6D-C09F29779AF9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ERP</RootNamespace>
+    <AssemblyName>ERP</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>ERP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>ERP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\background.png" />
+    <Content Include="Images\background2.png" />
+    <Content Include="Images\background3.png" />
+    <Content Include="Images\capacity.png" />
+    <Content Include="Images\exit.png" />
+    <Content Include="Images\icon_page.png" />
+    <Content Include="Images\icon_project.png" />
+    <Content Include="Images\login.png" />
+    <Content Include="Images\login_button.png" />
+    <Content Include="Images\login_logo.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\user.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="Main.aspx" />
+    <Content Include="MainOrder.aspx" />
+    <Content Include="Scripts\datepicker\js\bootstrap-datetimepicker.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.ar-ma.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.ar.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.bg.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.br.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.bs.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.by.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.ca.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.cs.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.cv.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.da.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.de.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.el.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.en-au.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.en-ca.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.en-gb.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.eo.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.es.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.et.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.eu.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.fa.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.fi.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.fr-ca.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.fr.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.gl.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.he.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.hi.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.hr.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.hu.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.id.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.is.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.it.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.ja.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.ka.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.ko.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.lt.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.lv.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.ml.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.mr.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.ms-my.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.nb.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.ne.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.nl.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.nn.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.pl.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.pt-BR.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.pt.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.ro.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.ru.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.sk.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.sl.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.sq.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.sv.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.th.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.tr.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.tzm-la.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.tzm.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.uk.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.uz.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.vn.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.zh-CN.js" />
+    <Content Include="Scripts\datepicker\js\locales\bootstrap-datetimepicker.zh-TW.js" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="Styles\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Styles\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Styles\bootstrap\css\bootstrap.css" />
+    <Content Include="Styles\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Styles\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Styles\bootstrap\js\bootstrap.js" />
+    <Content Include="Styles\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Styles\datepicker.css" />
+    <Content Include="Styles\MasterSiteStyle.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="test.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.vb">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.vb">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MainOrder.aspx.designer.vb">
+      <DependentUpon>MainOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainOrder.aspx.vb">
+      <DependentUpon>MainOrder.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MainSite.master.designer.vb">
+      <DependentUpon>MainSite.master</DependentUpon>
+    </Compile>
+    <Compile Include="MainSite.master.vb">
+      <DependentUpon>MainSite.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterSite.Master.designer.vb">
+      <DependentUpon>MasterSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSite.Master.vb">
+      <DependentUpon>MasterSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="test.aspx.designer.vb">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.vb">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Fonts\upcdl.eot" />
+    <None Include="Fonts\upcdl.ttf" />
+    <None Include="Fonts\upcdl.woff" />
+    <Content Include="MasterSite.Master" />
+    <Content Include="MainSite.master" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Scripts\datepicker\less\bootstrap-datetimepicker-build.less" />
+    <None Include="Scripts\datepicker\less\bootstrap-datetimepicker.less" />
+    <None Include="Styles\bootstrap\css\bootstrap-theme.css.map" />
+    <None Include="Styles\bootstrap\css\bootstrap.css.map" />
+    <None Include="Styles\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Styles\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Styles\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>18367</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

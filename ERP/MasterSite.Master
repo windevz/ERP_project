@@ -1,0 +1,67 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MasterSite.master.vb" Inherits="ERP.MasterSite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>ปั่นด้าย ย้อมด้าย และทอผ้า</title>
+    <link href="Images/icon_page.png" rel="shortcut icon" type="Image/x-icon" media="screen" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="ระบบงานปั่นด้าย  งานย้อมด้าย  และงานทอผ้า, ปั่นด้าย, ย้อมด้าย, ทอผ้า" />
+	<meta name="description" content="เว็บไซต์ระบบงานปั่นด้าย  งานย้อมด้าย  และงานทอผ้า" />
+	<meta name="copyright" content="Copyright 2014. All Rights Reserved." />
+	<meta name="robots" content="index, follow" />	    
+    <link href="Styles/MasterSiteStyle.css" rel="stylesheet" type="text/css" media="screen" />   
+    <link href="Styles/bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/datepicker.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery-2.1.1.js" type="text/javascript"></script>
+    <script src="Styles/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+    <script src="Scripts/moment.js" type="text/javascript"></script>
+     <script src="Scripts/datepicker/js/bootstrap-datetimepicker.js" type="text/javascript"></script>
+
+
+    
+</head>
+<body style="background-image: url(Images/background.png);">
+    <form id="MasterSite" runat="server">
+        <table style="width: 100%; border: 0; ">
+            <tr style="background:#3B5998;">
+                <td colspan="2">
+                    <asp:Image imageurl="Images/icon_project.png" width="45px" height="45px" style="float: left; padding-left: 10px; padding-top: 10px;" runat="server" />
+                    <asp:Label font-Size="28px" style="float: left; padding-left: 20px; padding-right: 20px; padding-top: 20px; color: White;" runat="server" >ระบบงานปั่นด้าย งานย้อมด้าย และงานทอผ้า</asp:Label>     
+                    <a href="Login.aspx">
+                        <asp:Image imageurl="Images/exit.png" width="30px" height="30px" style="float: right; padding-left: 10px; padding-right: 10px; padding-top: 20px; " runat="server" />
+                    </a>     
+                    <asp:Label font-Size="25px" style="float: right; color: White; padding-top: 20px;" runat="server" >Log in : admin</asp:Label> 
+                    <asp:Image imageurl="Images/user.png" width="30px" height="30px" style="float: right; padding-right: 10px; padding-top: 20px;" runat="server" />    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <asp:Button ID="btOrder" Width="120px" Height="30px" Text="Order" runat="server" />       
+                    <asp:Button ID="btQuotation" Width="120px" Height="30px" Text="Quotation" runat="server" />
+                    <asp:Button ID="btPurchase" Width="120px" Height="30px" Text="Purchase" runat="server" />
+                    <asp:Button ID="btWarehouse" Width="120px" Height="30px" Text="Warehouse" runat="server" />
+                    <asp:Button ID="btPlanning" Width="120px" Height="30px" Text="Planning" runat="server" />
+                    <asp:Button ID="btProduction" Width="120px" Height="30px" Text="Production" runat="server" />
+                    <asp:Button ID="btInsentive" Width="120px" Height="30px" Text="Insentive" runat="server" />
+                    <asp:Button ID="btSale" Width="120px" Height="30px" Text="Sale" runat="server" />
+                    <asp:Button ID="btCost" Width="120px" Height="30px" Text="Cost" runat="server" />
+                    <asp:Button ID="btSetting" Width="120px" Height="30px" Text="Setting" runat="server" />
+                </td>
+            </tr>
+            <tr>          
+                <td>
+                    <asp:ContentPlaceHolder id="cphData" runat="server">
+
+
+                        
+
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
